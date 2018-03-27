@@ -1,1 +1,3 @@
-# script_tutorial_java
+# script_java
+
+Workspace to test and challenges
