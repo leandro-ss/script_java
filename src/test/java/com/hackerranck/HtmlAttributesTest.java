@@ -3,26 +3,25 @@ package com.hackerranck;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import org.junit.Test;
 
 
-
 public class HtmlAttributesTest {
 
-    private static final File FILE;
+    private static final File FILE_1;
 
     static {
         //Get file from resources folder
-        FILE = new File(HtmlAttributes.class.getClassLoader().getResource("test.txt").getFile());        
+        FILE_1 = new File(HtmlAttributes.class.getClassLoader().getResource("test.txt").getFile());        
     }
     
-    @Test public void test() {
-        System.out.println(FILE.getPath());
+
+    @Test
+    public void test() throws IOException {
+        List <String> list = new HtmlAttributes().solution(FILE_1);
+
+        list.forEach(System.out::println);
     }
 }
