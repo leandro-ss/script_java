@@ -1,5 +1,0 @@
-a:accesskey,href,title
-div:class,id,role
-h3:
-li:id
-ul:
